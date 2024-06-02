@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Projects</title>
+		<link rel="stylesheet" href="styles.css" />
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&family=Dancing+Script:wght@500&family=Poiret+One&display=swap");
+		</style>
+		<script
+			src="https://kit.fontawesome.com/746f57e881.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body id="top">
+		<div class="navBar" id="nav">
+			<a href="index.html">
+				<span class="nameSpan">✨ IsraCoder ✨</span>
+			</a>
+
+			<ul class="navUl">
+				<li>
+					<a href="aboutMe.html">About</a>
+				</li>
+				<li>
+					<a href="projectsPage.html">Projects</a>
+				</li>
+				<li>
+					<a href="blog.html">Blog</a>
+				</li>
+				<li>
+					<button
+						id="pause-button"
+						title="pause-button"
+						type="button"
+					>
+						<i class="fa fa-pause"></i>
+					</button>
+				</li>
+				<li class="darkIcon">
+					<a href=""
+						><i class="fa-regular fa-moon darkModeIcon"></i
+					></a>
+				</li>
+				<li class="dNone lightIcon">
+					<a href=""
+						><i class="fa-regular fa-sun lightmodeIcon"></i
+					></a>
+				</li>
+				<li>
+					<a href="https://github.com/Isracoder" target="_blank"
+						><i class="fa-brands fa-github"></i
+					></a>
+				</li>
+				<li>
+					<a
+						href="https://www.linkedin.com/in/isra-zughyer-227320270/"
+						target="_blank"
+						><i class="fa-brands fa-linkedin"></i
+					></a>
+				</li>
+				<li>
+					<a href="mailto:IZughyer@gmail.com" target="_blank"
+						><i class="fa-regular fa-envelope"></i
+					></a>
+				</li>
+			</ul>
+		</div>
+		<a class="top-link" href="#top" id="toTopBtn">
+			<i class="fa fa-arrow-up"></i>
+		</a>
+		<audio
+			id="background-music"
+			src="assets/videoplayback.mp3"
+			autoplay
+			loop
+		></audio>
+		<h2 class="pageHeader">Go ahead and explore!</h2>
+		<div class="filterButtons dF aC jSe">
+			<!-- <ul> -->
+			<button class="filterBtn" value="All">All</button>
+			<button class="filterBtn" value="css">CSS</button>
+			<button class="filterBtn" value="Bootstrap">Bootstrap</button>
+			<button class="filterBtn" value="Javascript">Javascript</button>
+			<button class="filterBtn" value="Typescript">Typescript</button>
+			<button class="filterBtn" value="React">React</button>
+			<!-- </ul> -->
+		</div>
+		<div class="projectsContainer"></div>
+		<script src="test.js"></script>
+	</body>
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Isra's Portfolio</title>
+		<!-- <link rel="stylesheet" href="../bootstrap/bootstrap.css" /> -->
+		<link rel="stylesheet" id="linkElement" href="styles.css" />
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Caprasimo&family=Dancing+Script:wght@500&family=Pangolin&family=Poiret+One&display=swap");
+
+			/* @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&family=Dancing+Script:wght@500&display=swap"); */
+			/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap"); */
+		</style>
+		<script
+			src="https://kit.fontawesome.com/746f57e881.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body id="top">
+		<div class="overlay">
+			<div class="card">
+				<div class="cardContent">
+					<img src="assets/pomodoro.png" alt="a project" />
+					<h4>A paragraph</h4>
+					<span>
+						<i class="fa-regular fa-circle-xmark closeIcon"></i>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="navBar" id="nav">
+			<a href="index.html">
+				<span class="nameSpan">✨ IsraCoder ✨</span>
+			</a>
+
+			<ul class="navUl">
+				<li>
+					<a href="#aboutSection" class="scroll-link">About</a>
+				</li>
+				<li>
+					<a href="#projectsSection" class="scroll-link">Projects</a>
+				</li>
+				<li>
+					<a href="blog.html">Blog</a>
+				</li>
+				<li>
+					<button
+						id="pause-button"
+						title="pause-button"
+						type="button"
+					>
+						<i class="fa fa-pause"></i>
+					</button>
+				</li>
+				<!-- <li id="play-button" class="dNone">
+					<a href=""><i class="fa fa-play"></i></a>
+				</li> -->
+				<li class="darkIcon">
+					<a href=""
+						><i class="fa-regular fa-moon darkModeIcon"></i
+					></a>
+				</li>
+				<li class="lightIcon dNone">
+					<a href=""
+						><i class="fa-regular fa-sun lightmodeIcon"></i
+					></a>
+				</li>
+				<li>
+					<a href="https://github.com/Isracoder" target="_blank"
+						><i class="fa-brands fa-github"></i
+					></a>
+				</li>
+				<li>
+					<a
+						href="https://www.linkedin.com/in/isra-zughyer-227320270/"
+						target="_blank"
+						><i class="fa-brands fa-linkedin"></i
+					></a>
+				</li>
+				<li>
+					<a href="mailto:IZughyer@gmail.com" target="_blank"
+						><i class="fa-regular fa-envelope"></i
+					></a>
+				</li>
+			</ul>
+		</div>
+		<a class="top-link" href="#top" id="toTopBtn">
+			<i class="fa fa-arrow-up"></i>
+		</a>
+		<audio
+			id="background-music"
+			src="assets/videoplayback.mp3"
+			autoplay
+			loop
+		></audio>
+		<div class="body">
+			<div class="info">
+				<div class="statements">
+					<div class="designsColor dark bold">Isra Zughyer</div>
+					<div class="designsColor dark">Web Developer</div>
+					<div class="designsColor dark">Programmer</div>
+					<div class="designsColor dark">
+						Your Next &nbsp;<a
+							href="#contact"
+							class="navColor point"
+							>Choice</a
+						>
+					</div>
+				</div>
+				<img src="assets/meColorMus.jpg" class="myImg" alt="" />
+			</div>
+		</div>
+		<!-- <div class="allSvgs"> animation not right
+			<svg
+				class="otherBlob"
+				id="sw-js-blob-svg"
+				viewBox="0 0 100 100"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<defs>
+					<linearGradient
+						id="sw-gradient"
+						x1="0"
+						x2="1"
+						y1="1"
+						y2="0"
+					>
+						<stop
+							id="stop1"
+							stop-color="#a75c74"
+							offset="0%"
+						></stop>
+						<stop
+							id="stop2"
+							stop-color="#a75c74"
+							offset="100%"
+						></stop>
+					</linearGradient>
+				</defs>
+				<path
+					fill="none"
+					d="M24.3,-18.7C29,-13.5,28.7,-3.5,27.1,7.4C25.6,18.3,22.9,30.1,14.6,36.4C6.3,42.7,-7.5,43.4,-18.3,38.2C-29.1,32.9,-36.8,21.5,-35.2,12.6C-33.6,3.7,-22.6,-2.8,-15.2,-8.7C-7.8,-14.6,-3.9,-19.9,2.9,-22.3C9.8,-24.6,19.6,-24,24.3,-18.7Z"
+					width="100%"
+					height="100%"
+					transform="translate(50 50)"
+					stroke-width="1"
+					style="transition: all 0.3s ease 0s"
+					stroke="url(#sw-gradient)"
+				></path>
+			</svg>
+			<svg
+				class="otherBlob"
+				id="sw-js-blob-svg"
+				viewBox="0 0 100 100"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<defs>
+					<linearGradient
+						id="sw-gradient"
+						x1="0"
+						x2="1"
+						y1="1"
+						y2="0"
+					>
+						<stop
+							id="stop1"
+							stop-color="#a75c74"
+							offset="0%"
+						></stop>
+						<stop
+							id="stop2"
+							stop-color="#a75c74"
+							offset="100%"
+						></stop>
+					</linearGradient>
+				</defs>
+				<path
+					fill="none"
+					d="M24.3,-18.7C29,-13.5,28.7,-3.5,27.1,7.4C25.6,18.3,22.9,30.1,14.6,36.4C6.3,42.7,-7.5,43.4,-18.3,38.2C-29.1,32.9,-36.8,21.5,-35.2,12.6C-33.6,3.7,-22.6,-2.8,-15.2,-8.7C-7.8,-14.6,-3.9,-19.9,2.9,-22.3C9.8,-24.6,19.6,-24,24.3,-18.7Z"
+					width="100%"
+					height="100%"
+					transform="translate(50 50)"
+					stroke-width="1"
+					style="transition: all 0.3s ease 0s"
+					stroke="url(#sw-gradient)"
+				></path>
+			</svg>
+
+			<svg
+				class="otherBlob"
+				id="sw-js-blob-svg"
+				viewBox="0 0 100 100"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<defs>
+					<linearGradient
+						id="sw-gradient"
+						x1="0"
+						x2="1"
+						y1="1"
+						y2="0"
+					>
+						<stop
+							id="stop1"
+							stop-color="#a75c74"
+							offset="0%"
+						></stop>
+						<stop
+							id="stop2"
+							stop-color="#a75c74"
+							offset="100%"
+						></stop>
+					</linearGradient>
+				</defs>
+				<path
+					fill="none"
+					d="M24.3,-18.7C29,-13.5,28.7,-3.5,27.1,7.4C25.6,18.3,22.9,30.1,14.6,36.4C6.3,42.7,-7.5,43.4,-18.3,38.2C-29.1,32.9,-36.8,21.5,-35.2,12.6C-33.6,3.7,-22.6,-2.8,-15.2,-8.7C-7.8,-14.6,-3.9,-19.9,2.9,-22.3C9.8,-24.6,19.6,-24,24.3,-18.7Z"
+					width="100%"
+					height="100%"
+					transform="translate(50 50)"
+					stroke-width="1"
+					style="transition: all 0.3s ease 0s"
+					stroke="url(#sw-gradient)"
+				></path>
+			</svg>
+
+			<svg
+				class="otherBlob"
+				id="sw-js-blob-svg"
+				viewBox="0 0 100 100"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<defs>
+					<linearGradient
+						id="sw-gradient"
+						x1="0"
+						x2="1"
+						y1="1"
+						y2="0"
+					>
+						<stop
+							id="stop1"
+							stop-color="#a75c74"
+							offset="0%"
+						></stop>
+						<stop
+							id="stop2"
+							stop-color="#a75c74"
+							offset="100%"
+						></stop>
+					</linearGradient>
+				</defs>
+				<path
+					fill="none"
+					d="M24.3,-18.7C29,-13.5,28.7,-3.5,27.1,7.4C25.6,18.3,22.9,30.1,14.6,36.4C6.3,42.7,-7.5,43.4,-18.3,38.2C-29.1,32.9,-36.8,21.5,-35.2,12.6C-33.6,3.7,-22.6,-2.8,-15.2,-8.7C-7.8,-14.6,-3.9,-19.9,2.9,-22.3C9.8,-24.6,19.6,-24,24.3,-18.7Z"
+					width="100%"
+					height="100%"
+					transform="translate(50 50)"
+					stroke-width="1"
+					style="transition: all 0.3s ease 0s"
+					stroke="url(#sw-gradient)"
+				></path>
+			</svg>
+
+			<svg
+				class="otherBlob"
+				id="sw-js-blob-svg"
+				viewBox="0 0 100 100"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<defs>
+					<linearGradient
+						id="sw-gradient"
+						x1="0"
+						x2="1"
+						y1="1"
+						y2="0"
+					>
+						<stop
+							id="stop1"
+							stop-color="#a75c74"
+							offset="0%"
+						></stop>
+						<stop
+							id="stop2"
+							stop-color="#a75c74"
+							offset="100%"
+						></stop>
+					</linearGradient>
+				</defs>
+				<path
+					fill="none"
+					d="M24.3,-18.7C29,-13.5,28.7,-3.5,27.1,7.4C25.6,18.3,22.9,30.1,14.6,36.4C6.3,42.7,-7.5,43.4,-18.3,38.2C-29.1,32.9,-36.8,21.5,-35.2,12.6C-33.6,3.7,-22.6,-2.8,-15.2,-8.7C-7.8,-14.6,-3.9,-19.9,2.9,-22.3C9.8,-24.6,19.6,-24,24.3,-18.7Z"
+					width="100%"
+					height="100%"
+					transform="translate(50 50)"
+					stroke-width="1"
+					style="transition: all 0.3s ease 0s"
+					stroke="url(#sw-gradient)"
+				></path>
+			</svg>
+
+			<svg
+				class="otherBlob"
+				id="sw-js-blob-svg"
+				viewBox="0 0 100 100"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<defs>
+					<linearGradient
+						id="sw-gradient"
+						x1="0"
+						x2="1"
+						y1="1"
+						y2="0"
+					>
+						<stop
+							id="stop1"
+							stop-color="#a75c74"
+							offset="0%"
+						></stop>
+						<stop
+							id="stop2"
+							stop-color="#a75c74"
+							offset="100%"
+						></stop>
+					</linearGradient>
+				</defs>
+				<path
+					fill="none"
+					d="M24.3,-18.7C29,-13.5,28.7,-3.5,27.1,7.4C25.6,18.3,22.9,30.1,14.6,36.4C6.3,42.7,-7.5,43.4,-18.3,38.2C-29.1,32.9,-36.8,21.5,-35.2,12.6C-33.6,3.7,-22.6,-2.8,-15.2,-8.7C-7.8,-14.6,-3.9,-19.9,2.9,-22.3C9.8,-24.6,19.6,-24,24.3,-18.7Z"
+					width="100%"
+					height="100%"
+					transform="translate(50 50)"
+					stroke-width="1"
+					style="transition: all 0.3s ease 0s"
+					stroke="url(#sw-gradient)"
+				></path>
+			</svg>
+
+			<svg
+				class="otherBlob"
+				id="sw-js-blob-svg"
+				viewBox="0 0 100 100"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<defs>
+					<linearGradient
+						id="sw-gradient"
+						x1="0"
+						x2="1"
+						y1="1"
+						y2="0"
+					>
+						<stop
+							id="stop1"
+							stop-color="#a75c74"
+							offset="0%"
+						></stop>
+						<stop
+							id="stop2"
+							stop-color="#a75c74"
+							offset="100%"
+						></stop>
+					</linearGradient>
+				</defs>
+				<path
+					fill="none"
+					d="M24.3,-18.7C29,-13.5,28.7,-3.5,27.1,7.4C25.6,18.3,22.9,30.1,14.6,36.4C6.3,42.7,-7.5,43.4,-18.3,38.2C-29.1,32.9,-36.8,21.5,-35.2,12.6C-33.6,3.7,-22.6,-2.8,-15.2,-8.7C-7.8,-14.6,-3.9,-19.9,2.9,-22.3C9.8,-24.6,19.6,-24,24.3,-18.7Z"
+					width="100%"
+					height="100%"
+					transform="translate(50 50)"
+					stroke-width="1"
+					style="transition: all 0.3s ease 0s"
+					stroke="url(#sw-gradient)"
+				></path>
+			</svg>
+		</div> -->
+		<div class="margPadd otherFont">
+			<h2 id="aboutSection">What is IsraCoder?</h2>
+
+			<div class="dfJcAc margPadd bigWidth">
+				<span class="dark designsColor">What is this?</span> My personal
+				portfolio page
+			</div>
+			<div class="dfJcAc bigWidth">
+				<span class="dark designsColor where"
+					>What does the name mean?</span
+				>Anything <span class="dark designsColor">code</span> &amp;
+				Anything<span class="dark designsColor">me</span>
+			</div>
+			<div class="dfJcAc margPadd bigWidth">
+				<span class="designsColor dark large">Who am I ?</span>
+				Find out more &nbsp;
+				<a href="aboutMe.html" class="navColor point dark bold">
+					about me !</a
+				>
+			</div>
+		</div>
+		<h2 id="projectsSection">
+			Have a Look <i class="fa fa-arrow-down"></i>
+		</h2>
+		<div class="projectsContainerHome margPadd" id="projectsContainerHome">
+			<div class="arrow" id="arrowLeft">
+				<i class="fa fa-arrow-left"></i>
+			</div>
+			<div class="projects" id="projects"></div>
+			<div class="arrow" id="arrowRight">
+				<i class="fa fa-arrow-right"></i>
+			</div>
+		</div>
+		<div>
+			<h3 style="text-align: center">
+				Want to see
+				<a
+					href="projectsPage.html"
+					class="navColor point dark large"
+					target="_blank"
+				>
+					more project details</a
+				>
+				?
+			</h3>
+		</div>
+		<h2 id="contact">Contact Section <i class="fa fa-phone"></i></h2>
+		<div class="footer">
+			<div class="dark large bold">Want to get in Touch ?</div>
+			<div>
+				<i class="fa fa-arrow-right dark bold"></i> Email
+				<i class="fa-envelope fa-regular"></i> : IZughyer@gmail.com
+			</div>
+			<div>
+				<i class="fa fa-arrow-right dark"></i> Phone Number
+				<i class="fa-phone fa"></i> : Secret Number
+			</div>
+
+			<div class="copyright myFont">
+				Desgined by Isra Zughyer &copy; 2023
+			</div>
+		</div>
+
+		<script src="test.js"></script>
+	</body>
+</html>
+
+<!-- 
+            <svg
+				class="otherBlob"
+				id="sw-js-blob-svg"
+				viewBox="0 0 100 100"
+				xmlns="http://www.w3.org/2000/svg"
+                >
+				<defs>
+                    <linearGradient
+                    id="sw-gradient"
+                    x1="0"
+                    x2="1"
+                    y1="1"
+						y2="0"
+					>
+						<stop
+                        id="stop1"
+                        stop-color="rgba(85, 214, 190, 1)"
+                        offset="0%"
+						></stop>
+						<stop
+                        id="stop2"
+                        stop-color="rgba(83.501, 203.132, 169.696, 1)"
+                        offset="100%"
+						></stop>
+					</linearGradient>
+				</defs>
+				<path
+                fill="none"
+                d="M24.3,-18.7C29,-13.5,28.7,-3.5,27.1,7.4C25.6,18.3,22.9,30.1,14.6,36.4C6.3,42.7,-7.5,43.4,-18.3,38.2C-29.1,32.9,-36.8,21.5,-35.2,12.6C-33.6,3.7,-22.6,-2.8,-15.2,-8.7C-7.8,-14.6,-3.9,-19.9,2.9,-22.3C9.8,-24.6,19.6,-24,24.3,-18.7Z"
+                width="100%"
+                height="100%"
+                transform="translate(50 50)"
+                stroke-width="1"
+                style="transition: all 0.3s ease 0s"
+                stroke="url(#sw-gradient)"
+				></path>
+			</svg>
+			<svg
+				class="roundblob"
+				id="sw-js-blob-svg"
+				viewBox="0 0 100 100"
+				xmlns="http://www.w3.org/2000/svg"
+                >
+				<defs>
+                    <linearGradient
+                    id="sw-gradient"
+                    x1="0"
+                    x2="1"
+                    y1="1"
+                    y2="0"
+					>
+                    <stop
+                    id="stop1"
+                    stop-color="rgba(85, 214, 190, 1)"
+                    offset="0%"
+                    ></stop>
+                    <stop
+                    id="stop2"
+                    stop-color="rgba(172, 252, 217, 1)"
+                    offset="100%"
+                    ></stop>
+                </linearGradient>
+            </defs>
+            <path
+            fill="none"
+            d="M17.5,-23.7C22.8,-16.4,27.4,-11,28.2,-5.1C29,0.7,26.2,7.1,23,14C19.9,20.8,16.4,28.2,10.1,32.5C3.9,36.8,-5.2,38.1,-11,34.2C-16.7,30.4,-19.2,21.4,-22.7,13.8C-26.2,6.2,-30.7,0,-30.2,-5.7C-29.6,-11.4,-23.9,-16.5,-18,-23.7C-12.1,-30.9,-6.1,-40.1,0,-40.1C6.1,-40.2,12.2,-31,17.5,-23.7Z"
+            width="100%"
+            height="100%"
+            transform="translate(50 50)"
+            stroke-width="1"
+            style="transition: all 0.3s ease 0s"
+            stroke="url(#sw-gradient)"
+            ></path>
+        </svg>
+    -->
