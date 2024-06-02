@@ -8,7 +8,8 @@ This was made as a project for a university class as a second-year student.
 - Projects section with filters
 - About me section
 - Image carousel of projects with expansion
-- sticky Nav bar with links to socials 
+- sticky Nav bar with links to socials
+  
 *note: the assets folder contains the images displayed in the website, which are mini-projects that I had previously worked on and created.
 
 ## Images of the website 
